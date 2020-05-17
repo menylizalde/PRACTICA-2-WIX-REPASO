@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  min-width: 100%;
+  min-height: 695px;
+}
+.Navbar {
+  width: 70vw;
+  height: 10vh;
+  background: #ffffff;
+  display: flex;
+  float: right;
+}
+.Navbar li {
+  cursor: pointer;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 17px;
+  color: #b0a171;
+  list-style: none;
+  margin-top: 5px;
+  width: 10%;
+}
+.Navbar li:nth-child(5) {
+  font-size: 20px;
+}
+.Navbar li:nth-child(6) {
+  font-size: 20px;
+}
