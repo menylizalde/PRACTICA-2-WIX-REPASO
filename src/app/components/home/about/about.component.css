@@ -49,3 +49,7 @@ h2{
   height: 55px;
   align-items: flex-end;
 }
+img{
+  width: 100vw;
+  height: 100vh;
+}

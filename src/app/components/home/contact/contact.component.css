@@ -1,0 +1,30 @@
+.container-fluid{
+    background: #FFFFFF;
+}
+.form-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: yellowgreen; */
+
+}
+h2{
+    letter-spacing: 0.5em;
+    color: #b0a171;
+    margin-top: 20px;
+}
+p{
+    padding: 30px;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Didact Gothic", sans-serif;
+    color:  #b0a171;
+}
+input, textarea{
+    border-color:  #b0a171;
+}
+/* .btn-secondary {
+    background: #b0a171;
+    display: flex;
+    justify-content: right;
+} */
