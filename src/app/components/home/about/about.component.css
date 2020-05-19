@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  color: #FFFFFF;
+  align-items: center;
+}
+.container-fluid {
+  margin-top: 100px;
+  background: #b0a171;
+  height: 70vh;
+}
+h2{
+    padding: 60px;
+    text-align: center;
+    letter-spacing: 0.3em;
+    margin-left: auto;
+    margin-top: auto;
+}
+.text-content{
+    width: 495px;
+    height: 128px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 1.5em;
+    justify-content: center;
+}
+.icons{
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+  height: 55px;
+}
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  width: 90vw;
+}
+.row{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: flex;
+  width: 50vw;
+  height: 10vh;
+}
+.col-lg-3>svg{
+  fill: #FFFFFF;
+  width: 50px;
+  height: 55px;
+  align-items: flex-end;
+}
