@@ -1,6 +1,3 @@
-* {
-  background: #ffffff;
-}
 h1 {
   text-align: center;
   font-family: "Montserrat", sans-serif;
@@ -10,23 +7,19 @@ h1 {
 }
 .container-fluid {
   margin-top: 20px;
-  height: 120vh;
-  /* background: grey; */
+  background: #ffffff;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 .card-img-top {
-  background-color: greenyellow;
-  /* width: 200px; */
   height: 200px;
 }
 .card-body {
-  text-align: center;
-  background: rebeccapurple;
   height: 10vh;
   width: 100%;
+  position: relative;
 }
 .card-header {
   display: flex;

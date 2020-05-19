@@ -1,13 +1,14 @@
 <h1>SHOP</h1>
 
 <div class="container-fluid">
-    <div class="card" style="width: 18rem;" (mouseover)="MostrarDiv()" (mouseleave)="quitarDiv()">
-        <img class="card-img-top" src="../../../../assets/img/id4.JPG" alt="Card image cap" />
-        <div *ngIf="mostrar == false" class="card-header">
-            <span>Nombre Producto</span>
-            <span>$49.00</span>
+    <div class="card" style="width: 18rem;" *ngFor="let Producto of ShopProducts" (mouseover)="MostrarDiv()"
+        (mouseleave)="quitarDiv()">
+        <img class="card-img-top" src="{{Producto.img}}" alt="Card image cap" />
+        <div *ngIf="mostrar==false" class="card-header">
+            <span>{{Producto.product}} </span>
+            <span>{{Producto.price}} </span>
         </div>
-        <div *ngIf="mostrar == true" class="card-body">
+        <div *ngIf="mostrar==true" class="card-body">
             <span>View Details</span>
         </div>
     </div>

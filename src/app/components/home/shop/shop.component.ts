@@ -1,5 +1,8 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { fromEvent } from 'rxjs';
+import { from } from 'rxjs';
+import { take, tap, map } from 'rxjs/operators';
+import { ProductsInterface } from '../../../interface/ecommerse.interfaces';
+import { products } from './../../../data/data';
 
 @Component({
   selector: 'app-shop',
@@ -8,7 +11,10 @@ import { fromEvent } from 'rxjs';
 })
 export class ShopComponent implements OnInit {
   public mostrar: boolean = false;
-  constructor() {}
+  public ShopProducts: Array<ProductsInterface> = [];
+  constructor() {
+    this.obtenerNewProduct();
+  }
 
   ngOnInit(): void {}
 
@@ -18,8 +24,21 @@ export class ShopComponent implements OnInit {
   quitarDiv() {
     this.mostrar = false;
   }
-  
-  obtenerNewProduct(){
-    
+
+  obtenerNewProduct() {
+    from(products)
+      .pipe(
+        map((producto) => {
+          let DireccionImg = `../../../../assets/${producto.img}`;
+
+          return {
+            ...producto,
+            img: DireccionImg,
+          };
+        }),
+        take(3),
+        tap((value) => this.ShopProducts.push(value))
+      )
+      .subscribe((value) => console.log(this.ShopProducts));
   }
 }
