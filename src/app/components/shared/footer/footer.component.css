@@ -1,0 +1,22 @@
+footer{
+    background: #b0a171;
+}
+.list-inline-item{
+    font-size: 20px;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+.arrow{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.arrow>i{
+    color: #FFFFFF;
+    cursor: pointer;
+}
+p{
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+}
